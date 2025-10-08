@@ -25,5 +25,5 @@ plugins=(
   zsh-syntax-highlighting
   autoenv
 )
-
+source ~/dotfiles/zsh/aliases.zsh
 source $ZSH/oh-my-zsh.sh
