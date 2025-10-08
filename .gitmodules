@@ -1,0 +1,15 @@
+[submodule "zsh/.oh-my-zsh"]
+	path = zsh/.oh-my-zsh
+	url = https://github.com/ohmyzsh/ohmyzsh.git
+[submodule "/home/aicama/dotfiles/zsh/ohmyzsh-custom/plugins/autoenv"]
+	path = /home/aicama/dotfiles/zsh/ohmyzsh-custom/plugins/autoenv
+	url = https://github.com/Tarrasch/zsh-autoenv.git
+[submodule "/home/aicama/dotfiles/zsh/ohmyzsh-custom/plugins/zsh-syntax-highlighting"]
+	path = /home/aicama/dotfiles/zsh/ohmyzsh-custom/plugins/zsh-syntax-highlighting
+	url = https://github.com/zsh-users/zsh-syntax-highlighting.git
+[submodule "/home/aicama/dotfiles/zsh/ohmyzsh-custom/plugins/zsh-autosuggestions"]
+	path = /home/aicama/dotfiles/zsh/ohmyzsh-custom/plugins/zsh-autosuggestions
+	url = https://github.com/zsh-users/zsh-autosuggestions
+[submodule "/home/aicama/dotfiles/zsh/ohmyzsh-custom/themes/powerlevel10k"]
+	path = /home/aicama/dotfiles/zsh/ohmyzsh-custom/themes/powerlevel10k
+	url = https://github.com/romkatv/powerlevel10k.git
