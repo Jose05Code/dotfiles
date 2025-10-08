@@ -1,8 +1,9 @@
 # ~/.zshrc
-# Common ls aliases
-alias ls='ls --color=auto'         # Enable colors
-alias ll='ls -lh'                  # Long format with human-readable sizes
-alias la='ls -A'                   # Show hidden files, but no . or ..
-alias lla='ls -lAh'                # Long + hidden + human-readable
-alias lt='ls -lt'                  # Sort by modification time (newest first)
-alias lS='ls -lSh'                 # Sort by file size
+
+# Aliases for eza, a modern replacement for ls
+alias ls='eza --color=auto --group-directories-first'
+alias ll='eza -lh --icons'
+alias la='eza -a --icons'
+alias lla='eza -lah --icons'
+alias lt='eza -lh --sort=modified --icons'
+alias tree='eza --tree --icons'
