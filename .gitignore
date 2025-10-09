@@ -1,0 +1,35 @@
+# Editor and IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Backup files
+*.backup
+*.bak
+*.old
+
+# Temporary files
+*.tmp
+.cache/
+
+# Screenshot working files (keep only final screenshots)
+screenshots/*.psd
+screenshots/*.xcf
+
+# OS-specific files
+Thumbs.db
+Desktop.ini
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Local configuration overrides (user-specific)
+*.local
+
+# Log files
+*.log
