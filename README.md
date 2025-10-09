@@ -8,10 +8,6 @@ A comprehensive dotfiles repository for customizing your Unix-like development e
 <!-- Add your Kitty terminal screenshot here -->
 *Screenshot showing the Kitty terminal with Blazer color scheme and Powerlevel10k prompt*
 
-### Powerlevel10k Prompt
-<!-- Add screenshot of your Powerlevel10k prompt here -->
-*Screenshot demonstrating the Powerlevel10k prompt with git integration*
-
 ### File Navigation with eza
 <!-- Add screenshot showing eza output with icons -->
 *Example of enhanced file listing with eza, showing icons and colors*
@@ -118,11 +114,7 @@ sudo pacman -S kitty
 # Create symlinks
 ln -sf ~/dotfiles/zsh/zshrc ~/.zshrc
 ln -sf ~/dotfiles/kitty/kitty.conf ~/.config/kitty/kitty.conf
-```
-
-6. **Install Oh My Zsh** (if not already installed):
-```bash
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+ln -sf ~/dotfiles/zsh/.oh-my-zsh ~/.config/.oh-my-zsh
 ```
 
 7. **Set Zsh as default shell:**
@@ -133,75 +125,6 @@ chsh -s $(which zsh)
 8. **Configure Powerlevel10k:**
 ```bash
 # Restart your terminal, then run:
-p10k configure
-```
-
-### Ubuntu/Debian
-
-1. **Install base dependencies:**
-```bash
-sudo apt update
-sudo apt install -y git zsh curl
-```
-
-2. **Clone the repository:**
-```bash
-cd ~
-git clone --recurse-submodules https://github.com/Jose05Code/dotfiles.git
-```
-
-3. **Install modern CLI tools:**
-
-For Ubuntu 20.04+ or Debian 11+:
-```bash
-# Install fzf
-sudo apt install -y fzf
-
-# Install bat (note: might be 'batcat' on Debian/Ubuntu)
-sudo apt install -y bat
-# Create alias if installed as batcat
-[ -f /usr/bin/batcat ] && mkdir -p ~/.local/bin && ln -s /usr/bin/batcat ~/.local/bin/bat
-
-# Install eza (from GitHub releases or cargo)
-# Option 1: Using cargo (if Rust is installed)
-cargo install eza
-
-# Option 2: Download latest release
-wget -c https://github.com/eza-community/eza/releases/latest/download/eza_x86_64-unknown-linux-gnu.tar.gz -O - | tar xz
-sudo mv eza /usr/local/bin/
-
-# Install zoxide
-curl -sS https://raw.githubusercontent.com/ajeetdsouza/zoxide/main/install.sh | bash
-```
-
-4. **Install Kitty:**
-```bash
-sudo apt install -y kitty
-```
-
-5. **Set up configuration:**
-```bash
-# Backup existing config
-[ -f ~/.zshrc ] && mv ~/.zshrc ~/.zshrc.backup
-
-# Create symlinks
-ln -sf ~/dotfiles/zsh/zshrc ~/.zshrc
-mkdir -p ~/.config/kitty
-ln -sf ~/dotfiles/kitty/kitty.conf ~/.config/kitty/kitty.conf
-```
-
-6. **Install Oh My Zsh:**
-```bash
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-```
-
-7. **Set Zsh as default shell:**
-```bash
-chsh -s $(which zsh)
-```
-
-8. **Log out and log back in**, then configure Powerlevel10k:
-```bash
 p10k configure
 ```
 
@@ -242,11 +165,6 @@ brew install --cask kitty
 ln -sf ~/dotfiles/zsh/zshrc ~/.zshrc
 mkdir -p ~/.config/kitty
 ln -sf ~/dotfiles/kitty/kitty.conf ~/.config/kitty/kitty.conf
-```
-
-7. **Install Oh My Zsh** (if not already installed):
-```bash
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
 
 8. **Set Zsh as default shell** (usually already default on modern macOS):

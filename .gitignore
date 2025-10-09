@@ -23,6 +23,11 @@ screenshots/*.xcf
 Thumbs.db
 Desktop.ini
 
+# Environment files
+.env
+.env.local
+.env.*.local
+
 # Local configuration overrides (user-specific)
 *.local
 

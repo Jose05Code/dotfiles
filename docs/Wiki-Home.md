@@ -11,7 +11,6 @@ This wiki contains everything you need to know about using and customizing your 
 - **[Installation Guide](Installation-Guide.md)** - Complete installation instructions for all platforms
 - **[Usage Guide](Usage-Guide.md)** - Learn how to use all the features and tools
 - **[Customization](Customization.md)** - Make the configuration your own
-- **[Advanced Features](Advanced-Features.md)** - Power user tips and workflows
 - **[Contributing](../CONTRIBUTING.md)** - How to contribute to the project
 
 ---
@@ -58,17 +57,6 @@ cd ~/dotfiles/zsh && bash zsh.bash
 ```
 
 👉 **[Full Arch Linux Guide](Installation-Guide.md#arch-linux)**
-
-### Ubuntu/Debian
-Requires manual installation of some modern CLI tools.
-
-**Quick Install:**
-```bash
-git clone --recurse-submodules https://github.com/Jose05Code/dotfiles.git ~/dotfiles
-# Then follow the detailed guide
-```
-
-👉 **[Full Ubuntu/Debian Guide](Installation-Guide.md#ubuntudebian)**
 
 ### macOS
 Uses Homebrew for easy package management.
@@ -208,15 +196,7 @@ j down  # Jump to Downloads and list contents
    - Adding new plugins
    - Creating custom functions
 
-4. **[Advanced Features](Advanced-Features.md)**
-   - Advanced Zsh features
-   - Shell scripting techniques
-   - Workflow automation
-   - Performance optimization
-   - Integration with other tools
-   - Git workflows
-
-5. **[Contributing Guide](../CONTRIBUTING.md)**
+4. **[Contributing Guide](../CONTRIBUTING.md)**
    - How to report bugs
    - Suggesting enhancements
    - Submitting changes
@@ -410,15 +390,6 @@ We welcome contributions! See the **[Contributing Guide](../CONTRIBUTING.md)** f
 2. ✅ Add your own aliases
 3. ✅ Customize your prompt
 4. ✅ Explore Oh My Zsh plugins
-
-### For Advanced Users
-
-1. ✅ Study [Advanced Features](Advanced-Features.md)
-2. ✅ Write custom functions
-3. ✅ Automate workflows
-4. ✅ Contribute improvements
-
----
 
 ## 📊 Feature Comparison
 

@@ -12,7 +12,6 @@ Complete installation instructions for all supported platforms.
 ## Platform-Specific Guides
 
 - [Arch Linux Installation](#arch-linux)
-- [Ubuntu/Debian Installation](#ubuntudebian)
 - [macOS Installation](#macos)
 - [Post-Installation Setup](#post-installation-setup)
 
@@ -77,6 +76,7 @@ When prompted, allow Oh My Zsh to set Zsh as your default shell.
 ln -sf ~/dotfiles/zsh/zshrc ~/.zshrc
 mkdir -p ~/.config/kitty
 ln -sf ~/dotfiles/kitty/kitty.conf ~/.config/kitty/kitty.conf
+ln -sf ~/dotfiles/zsh/.oh-my-zsh ~/.config/.oh-my-zsh
 ```
 
 ### Step 7: Install Nerd Fonts
@@ -105,140 +105,6 @@ p10k configure
 ```
 
 Follow the prompts to customize your prompt appearance.
-
----
-
-## Ubuntu/Debian
-
-Installation on Ubuntu/Debian requires a few extra steps as some packages aren't in the default repositories.
-
-### Step 1: Update System and Install Base Dependencies
-
-```bash
-sudo apt update
-sudo apt install -y git zsh curl wget
-```
-
-### Step 2: Clone the Repository
-
-```bash
-cd ~
-git clone --recurse-submodules https://github.com/Jose05Code/dotfiles.git
-```
-
-### Step 3: Install Oh My Zsh
-
-```bash
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-```
-
-### Step 4: Install Modern CLI Tools
-
-#### Install fzf
-
-```bash
-sudo apt install -y fzf
-```
-
-#### Install bat
-
-```bash
-sudo apt install -y bat
-
-# On Ubuntu/Debian, bat is installed as 'batcat'
-# Create a symlink for convenience
-mkdir -p ~/.local/bin
-ln -s /usr/bin/batcat ~/.local/bin/bat
-
-# Add to PATH if needed
-echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.zshrc
-```
-
-#### Install eza
-
-Option 1: Using cargo (if Rust is installed)
-```bash
-cargo install eza
-```
-
-Option 2: Download binary
-```bash
-# For x86_64 Linux
-wget -c https://github.com/eza-community/eza/releases/latest/download/eza_x86_64-unknown-linux-gnu.tar.gz -O - | tar xz
-sudo mv eza /usr/local/bin/
-sudo chmod +x /usr/local/bin/eza
-```
-
-Option 3: Build from source
-```bash
-# Install Rust if not already installed
-curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
-source $HOME/.cargo/env
-
-# Build and install eza
-cargo install eza
-```
-
-#### Install zoxide
-
-```bash
-curl -sS https://raw.githubusercontent.com/ajeetdsouza/zoxide/main/install.sh | bash
-```
-
-### Step 5: Install Kitty Terminal
-
-```bash
-sudo apt install -y kitty
-```
-
-Alternatively, install the latest version:
-```bash
-curl -L https://sw.kovidgoyal.net/kitty/installer.sh | sh /dev/stdin
-```
-
-### Step 6: Set Up Configuration Files
-
-```bash
-# Backup existing configurations
-[ -f ~/.zshrc ] && mv ~/.zshrc ~/.zshrc.backup
-
-# Create symlinks
-ln -sf ~/dotfiles/zsh/zshrc ~/.zshrc
-mkdir -p ~/.config/kitty
-ln -sf ~/dotfiles/kitty/kitty.conf ~/.config/kitty/kitty.conf
-```
-
-### Step 7: Install Nerd Fonts
-
-Download and install MesloLGS NF:
-
-```bash
-mkdir -p ~/.local/share/fonts
-cd ~/.local/share/fonts
-
-# Download all MesloLGS NF variants
-wget https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Regular.ttf
-wget https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Bold.ttf
-wget https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Italic.ttf
-wget https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Bold%20Italic.ttf
-
-# Update font cache
-fc-cache -fv
-```
-
-### Step 8: Set Zsh as Default Shell
-
-```bash
-chsh -s $(which zsh)
-```
-
-You'll need to log out and log back in for this to take effect.
-
-### Step 9: Configure Powerlevel10k
-
-```bash
-p10k configure
-```
 
 ---
 

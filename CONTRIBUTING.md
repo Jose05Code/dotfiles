@@ -342,8 +342,6 @@ What actually happened
 
 ## Environment
 - OS: [e.g., Arch Linux, macOS 13]
-- Shell version: [e.g., zsh 5.9]
-- Terminal: [e.g., Kitty 0.26.0]
 - Relevant tool versions: [e.g., fzf 0.35.0]
 
 ## Screenshots
@@ -380,12 +378,5 @@ If you have questions about contributing:
 - Open an issue with the `question` label
 - Check existing documentation
 - Look at closed issues and PRs for examples
-
-## Recognition
-
-Contributors will be recognized in:
-- The README acknowledgments section
-- Git commit history
-- GitHub contributors page
 
 Thank you for contributing! 🎉
