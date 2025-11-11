@@ -13,3 +13,6 @@
 [submodule "zsh/ohmyzsh-custom/themes/powerlevel10k"]
 	path = zsh/ohmyzsh-custom/themes/powerlevel10k
 	url = https://github.com/romkatv/powerlevel10k.git
+[submodule "nvim/lazy.nvim"]
+	path = nvim/lazy.nvim
+	url = https://github.com/folke/lazy.nvim
