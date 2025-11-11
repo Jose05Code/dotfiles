@@ -17,7 +17,7 @@ require("lazy").setup({
         { import = "Aicama.plugins.editing" },
         { import = "Aicama.plugins.git" },
 },
-install = { colorscheme = { "tokyonight" } },
+install = { colorscheme = { "gruvbox" } },
 checker = { enabled = true },
 })
 

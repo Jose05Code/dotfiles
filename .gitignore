@@ -33,3 +33,5 @@ Desktop.ini
 
 # Log files
 *.log
+
+lazy-lock.json
