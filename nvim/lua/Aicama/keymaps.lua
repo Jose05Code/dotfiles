@@ -10,4 +10,6 @@ vim.keymap.set("n", "<leader>e", "<cmd>NvimTreeToggle<cr>", {noremap = true, sil
 
 vim.keymap.set("n", "<leader>t", "<cmd>ToggleTerm<cr>", {noremap = true, silent = true})
 
-
+-- Make tab indent
+vim.keymap.set("v", "<Tab>", ">gv", {noremap = true, silent = true})
+vim.keymap.set("v", "<S-Tab>", "<gv", {noremap = true, silent = true})

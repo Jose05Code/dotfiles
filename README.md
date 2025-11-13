@@ -189,7 +189,13 @@ After installation, the following configurations are active:
 ### Kitty Configuration
 - **Theme**: Blazer (custom dark theme)
 - **Editor**: Visual Studio Code (configurable)
-- **Multiple clipboard buffers**: F1-F4 for copy, Alt+F1-F4 for paste
+- **Multiple clipboard buffers**: F1-F4 for copy, Alt+F1-F4 for pastei
+
+### NeoVIm Configuration
+```bash
+sudo apt install clangd
+sudo apt install Neovim
+```
 
 ## 💡 Usage Examples
 
@@ -285,17 +291,6 @@ bats filename.txt
 
 ## 🖥️ Kitty Terminal Setup
 
-### Blazer Color Scheme
-
-The Blazer color scheme provides a comfortable dark theme optimized for extended coding sessions:
-
-- **Background**: Deep blue-black (#0d1925)
-- **Foreground**: Light blue-white (#d9e5f1)
-- **16-color palette**: Muted tones for reduced eye strain
-
-<!-- Add screenshot of Kitty with Blazer theme here -->
-*Screenshot of Kitty terminal with Blazer color scheme*
-
 ### Multiple Clipboard Buffers
 
 Kitty is configured with multiple clipboard buffers for power users:
@@ -322,14 +317,6 @@ brew install --cask font-meslo-lg-nerd-font
 
 # On Linux, download and install manually from:
 # https://github.com/romkatv/powerlevel10k#fonts
-```
-
-Then configure Kitty to use the font by adding to `kitty.conf`:
-```
-font_family      MesloLGS NF
-bold_font        auto
-italic_font      auto
-bold_italic_font auto
 ```
 
 ## 🎨 Customization
