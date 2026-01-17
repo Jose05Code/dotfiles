@@ -115,6 +115,7 @@ sudo pacman -S kitty
 ln -sf ~/dotfiles/zsh/zshrc ~/.zshrc
 ln -sf ~/dotfiles/kitty/kitty.conf ~/.config/kitty/kitty.conf
 ln -sf ~/dotfiles/zsh/.oh-my-zsh ~/.config/.oh-my-zsh
+ln -sf ~/dotfiles/nvim ~/.config/nvim
 ```
 
 7. **Set Zsh as default shell:**
