@@ -16,6 +16,7 @@ require("lazy").setup({
         { import = "Aicama.plugins.navigation" },
         { import = "Aicama.plugins.editing" },
         { import = "Aicama.plugins.git" },
+        { import = "Aicama.plugins.ui"}
 },
 install = { colorscheme = { "gruvbox" } },
 checker = { enabled = true },
