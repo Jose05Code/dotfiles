@@ -37,3 +37,13 @@ alias gb='git branch | fzf | xargs git checkout'
 # Jump and list contents beautifully
 alias zoxidej='cd "$(zoxide query -i)" && eza -lh --icons'
 alias zoxidea='zoxide add'
+
+#=================================================
+# Hyprctl shortcuts 
+#=================================================
+
+# Restart Wallpaper
+alias hyprpaper-reload='pkill hyprpaper && hyprctl dispatch exec hyprpaper'
+
+# Restar Waybar
+alias waybar-reload='pkill waybar && hyprctl dispatch exec waybar'
