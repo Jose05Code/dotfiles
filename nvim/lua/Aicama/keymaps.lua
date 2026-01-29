@@ -13,3 +13,4 @@ vim.keymap.set("n", "<leader>t", "<cmd>ToggleTerm<cr>", {noremap = true, silent 
 -- Make tab indent
 vim.keymap.set("v", "<Tab>", ">gv", {noremap = true, silent = true})
 vim.keymap.set("v", "<S-Tab>", "<gv", {noremap = true, silent = true})
+

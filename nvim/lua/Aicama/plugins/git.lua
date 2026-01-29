@@ -1,7 +1,5 @@
 return {
   { "lewis6991/gitsigns.nvim", opts = {} },
-  { "nvim-lualine/lualine.nvim", opts = { options = { theme = "tokyonight" } } },
-  { "folke/which-key.nvim", opts = {} },
   {
       "KDHEEPAK/LAZYGIT.NVIM",
       CMD = {
@@ -15,6 +13,7 @@ return {
       KEYS = {
         { "<LEADER>LG", "<CMD>lAZYgIT<cr>", DESC = "oPEN lAZYgIT" },
       },
-  }
+  },
+  {"github/copilot.vim"},
 }
 
