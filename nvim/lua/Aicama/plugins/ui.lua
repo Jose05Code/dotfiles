@@ -85,8 +85,9 @@ return {
             "rcarriga/nvim-notify",
         },
         config = function()
+            local bg_color = vim.opt.background:get() == "dark" and "#1d2021" or "#fbf1c7"
             require("notify").setup({
-                background_colour = "#1d2021",
+                background_colour = bg_color,
             })
             require("noice").setup({
                 lsp = {
