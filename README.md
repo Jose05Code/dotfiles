@@ -86,7 +86,7 @@ This configuration requires the following packages:
 
 1. **Install base dependencies:**
 ```bash
-sudo pacman -S git zsh
+sudo pacman -S git zsh nvim eza fzf bat zoxide
 ```
 
 2. **Clone the repository:**
@@ -116,6 +116,7 @@ ln -sf ~/dotfiles/zsh/zshrc ~/.zshrc
 ln -sf ~/dotfiles/kitty/kitty.conf ~/.config/kitty/kitty.conf
 ln -sf ~/dotfiles/zsh/.oh-my-zsh ~/.config/.oh-my-zsh
 ln -sf ~/dotfiles/nvim ~/.config/nvim
+ln -sf ~/dotfiles/waybar ~/.config/waybar
 ```
 6. **If you are using hyprland:**
 ```bash
