@@ -1,12 +1,13 @@
-#!/bin/bash
-# Toggle between dark and light theme
+#! /usr/bin/bash
 
-CURRENT=$(gsettings get org.gnome.desktop.interface color-scheme)
-
-if [[ "$CURRENT" == "'prefer-dark'" ]]; then
-    gsettings set org.gnome.desktop.interface color-scheme 'prefer-light'
-    gsettings set org.gnome.desktop.interface gtk-theme 'Adwaita'
+file="$HOME/dotfiles/nvim/lua/Aicama/theme.lua"
+if grep -q 'vim.opt.background = "light"' $file; then
+    # Switch to dark theme
+    sed -i 's/vim.opt.background = "light"/vim.opt.background = "dark"/' $file
+    echo "Switched to dark theme"
 else
-    gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
-    gsettings set org.gnome.desktop.interface gtk-theme 'Adwaita-dark'
+    # Switch to light theme
+    sed -i 's/vim.opt.background = "dark"/vim.opt.background = "light"/' $file
+    echo "Switched to light theme"
 fi
+
