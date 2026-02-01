@@ -8,7 +8,6 @@ vim.opt.rtp:prepend(lazypath)
 require("Aicama.opts")
 require("Aicama.keymaps")
 require("Aicama.autocmds")
-
 -- Plugins
 require("lazy").setup({
     spec = {
@@ -16,7 +15,8 @@ require("lazy").setup({
         { import = "Aicama.plugins.navigation" },
         { import = "Aicama.plugins.editing" },
         { import = "Aicama.plugins.git" },
-        { import = "Aicama.plugins.ui"}
+        { import = "Aicama.plugins.ui"},
+        { import = "Aicama.theme"},
 },
 install = { colorscheme = { "gruvbox" } },
 checker = { enabled = true },
