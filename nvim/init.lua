@@ -5,21 +5,21 @@ local lazypath = vim.fn.stdpath("config") .. "/lazy.nvim"
 vim.opt.rtp:prepend(lazypath)
 
 -- Core Modules
-require("Aicama.opts")
-require("Aicama.keymaps")
-require("Aicama.autocmds")
+require("opts")
+require("keymaps")
+require("autocmds")
 -- Plugins
 require("lazy").setup({
     spec = {
-        { import = "Aicama.plugins.core" },	
-        { import = "Aicama.plugins.navigation" },
-        { import = "Aicama.plugins.editing" },
-        { import = "Aicama.plugins.git" },
-        { import = "Aicama.plugins.ui"},
-        { import = "Aicama.theme"},
+        { import = "plugins.core" },	
+        { import = "plugins.navigation" },
+        { import = "plugins.editing" },
+        { import = "plugins.git" },
+        { import = "plugins.ui"},
+        { import = "theme"},
 },
 install = { colorscheme = { "gruvbox" } },
 checker = { enabled = true },
 })
 
-require("Aicama.lsp.clangd")
+require("lsp.clangd")
