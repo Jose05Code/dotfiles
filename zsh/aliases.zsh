@@ -47,3 +47,9 @@ alias hyprpaper-reload='pkill hyprpaper && hyprctl dispatch exec hyprpaper'
 
 # Restar Waybar
 alias waybar-reload='pkill waybar && hyprctl dispatch exec waybar'
+
+#=================================================
+# Others
+#=================================================
+
+alias icat='kitty +kitten icat'
