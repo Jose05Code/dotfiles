@@ -17,6 +17,7 @@ require("lazy").setup({
         { import = "plugins.git" },
         { import = "plugins.ui"},
         { import = "theme"},
+        { import = "plugins.previews" },
 },
 install = { colorscheme = { "gruvbox" } },
 checker = { enabled = true },
