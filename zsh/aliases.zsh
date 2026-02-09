@@ -53,3 +53,4 @@ alias waybar-reload='pkill waybar && hyprctl dispatch exec waybar'
 #=================================================
 
 alias icat='kitty +kitten icat'
+alias bashf='bash $(fzf)'
