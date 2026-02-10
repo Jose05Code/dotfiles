@@ -1,8 +1,6 @@
 Dependencies
 ------------
 
----
-
 ### Core tools
 
 * **git** — Version control system
