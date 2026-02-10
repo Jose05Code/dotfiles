@@ -74,3 +74,13 @@ sudo pacman -S --needed --noconfirm \
     firefox \           # Web browser
     brave               # Web browser
 ```
+
+```bash
+# ── Symbolic links for configuration files ─────────── 
+ln -sf ~/dotfiles/zsh/zshrc ~/.zshrc
+ln -sf ~/dotfiles/kitty/kitty.conf ~/.config/kitty/kitty.conf
+ln -sf ~/dotfiles/zsh/.oh-my-zsh ~/.config/.oh-my-zsh
+ln -sf ~/dotfiles/nvim ~/.config/nvim
+ln -sf ~/dotfiles/waybar ~/.config/waybar
+ln -sf ~/dotfiles/hyprl ~/.conf/hyprl
+```
