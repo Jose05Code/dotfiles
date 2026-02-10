@@ -19,16 +19,16 @@ alias tree='eza --tree --level=2 --icons'
 #=================================================
 
 # Fuzzy find and open a file in the editor
-alias nvimf='nvim $(fzf)'
+alias nvimf='nvim $(fzf --height 40% --layout=reverse --preview="bat --style=numbers --color=always {}" )'
 
 # Fuzzy find and cd into a directory
-alias cdf='cd $(find . -type d | fzf)'
+alias cdf='cd $(find . -type d | fzf --height 40% --layout=reverse)'
 
 # Fuzzy search through command history
-alias historyf='history | fzf'
+alias historyf='history | fzf --height 40% --layout=reverse | awk "{\$1=\"\"; print \$0}" | xargs -I {} sh -c "{}"'
 
 # Fuzzy switch Git branch
-alias gb='git branch | fzf | xargs git checkout'
+alias gb='git branch | fzf --height 40% --layout=reverse | xargs git checkout'
 
 #=================================================
 # zoxide shortcuts
