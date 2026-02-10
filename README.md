@@ -96,3 +96,11 @@ ln -sf ~/dotfiles/nvim ~/.config/nvim
 ln -sf ~/dotfiles/waybar ~/.config/waybar
 ln -sf ~/dotfiles/hyprl ~/.conf/hyprl
 ```
+
+Change default shell to zsh 
+====
+
+```bash
+chsh -s $(which zsh)
+```
+
