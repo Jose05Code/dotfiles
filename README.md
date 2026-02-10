@@ -40,6 +40,17 @@ Dependencies
 Instalation
 -----------
 
+Clone the repository
+====
+
+```bash
+# Clone with recurse-submodules
+git clone --recurse-submodules https://github.com/Jose05Code/dotfiles.git
+```
+
+Install Dependencies
+====
+
 ```bash
 sudo pacman -S --needed --noconfirm \
     # ── Core tools ─────────────────────────────
@@ -72,6 +83,9 @@ sudo pacman -S --needed --noconfirm \
     firefox \           # Web browser
     brave               # Web browser
 ```
+
+Create symbolic links
+====
 
 ```bash
 # ── Symbolic links for configuration files ─────────── 
