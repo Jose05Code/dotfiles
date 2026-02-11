@@ -1,3 +1,22 @@
+Screenshots
+====
+
+Hyprland
+----
+
+![Hyprland](screenshots/Hyprland.png)
+
+Terminal
+----
+
+![Terminal](screenshots/Terminal.png)
+
+Neovim
+----
+
+![Neovim](screenshots/Neovim.png)
+
+
 Dependencies
 ====
 
