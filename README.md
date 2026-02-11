@@ -1,24 +1,52 @@
-Screenshots
-====
+# 🎨 Dotfiles Configuration
 
-Hyprland
-----
+> **Personal configuration files for Hyprland, Neovim, Kitty, and more**
+
+## 📑 Table of Contents
+
+- [Screenshots](#screenshots)
+  - [Hyprland](#hyprland)
+  - [Terminal](#terminal)
+  - [Neovim](#neovim)
+- [Dependencies](#dependencies)
+  - [Core tools](#core-tools)
+  - [Terminal & CLI enhancements](#terminal--cli-enhancements)
+  - [Wayland / Hyprland utilities](#wayland--hyprland-utilities)
+  - [File management](#file-management)
+  - [Media](#media)
+  - [Browsers](#browsers)
+- [Installation](#installation)
+  - [Clone the repository](#clone-the-repository)
+  - [Install Dependencies](#install-dependencies)
+  - [Create symbolic links](#create-symbolic-links)
+  - [Change default shell to zsh](#change-default-shell-to-zsh)
+- [Shortcuts](#shortcuts)
+  - [Hyprland Shortcuts](#hyprland-shortcuts----dotfilesypr)
+  - [Kitty Shortcuts](#kitty-shortcuts----dotfileskittykitty_shortcutsconf)
+
+---
+
+## 📸 Screenshots
+
+### Hyprland
+
+
 
 ![Hyprland](screenshots/Hyprland.png)
 
-Terminal
-----
+### Terminal
 
 ![Terminal](screenshots/Terminal.png)
 
-Neovim
-----
+### Neovim
 
 ![Neovim](screenshots/Neovim.png)
 
 
-Dependencies
-====
+## 📦 Dependencies
+
+> [!NOTE]
+> These are the required dependencies for the full setup. You can install subsets based on your needs.
 
 ### Core tools
 
@@ -56,19 +84,22 @@ Dependencies
 * **firefox** — Web browser
 * **brave** — Web browser
 
-Installation
-====
+## ⚙️ Installation
 
-Clone the repository
-----
+> [!WARNING]
+> Make sure to backup your existing configuration files before creating symbolic links!
+
+### 📥 Clone the repository
 
 ```bash
 # Clone with recurse-submodules
 git clone --recurse-submodules https://github.com/Jose05Code/dotfiles.git
 ```
 
-Install Dependencies
-----
+### 📦 Install Dependencies
+
+> [!NOTE]
+> This installation uses `pacman` (Arch Linux). Adapt the package manager for your distribution.
 
 ```bash
 sudo pacman -S --needed --noconfirm \ 
@@ -92,12 +123,10 @@ sudo pacman -S --needed --noconfirm \
     brave               
 ```
 
-Create symbolic links
-----
+### 🔗 Create symbolic links
 
-```bash
-sudo pacman -S kitty
-```
+> [!IMPORTANT]
+> Symbolic links will overwrite existing configurations. Back them up first!
 
 ```bash
 # ── Symbolic links for configuration files ─────────── 
@@ -109,18 +138,21 @@ ln -sf ~/dotfiles/waybar ~/.config/waybar
 ln -sf ~/dotfiles/hypr ~/.config/hypr
 ```
 
-Change default shell to zsh 
-----
+### 🐚 Change default shell to zsh 
+
+> [!TIP]
+> You'll need to log out and back in for the shell change to take effect.
 
 ```bash
 chsh -s $(which zsh)
 ```
 
-Shortcuts
-====
+## ⌨️ Shortcuts
 
-Hyprland Shortcuts -> ~/dotfiles/hypr/ 
-----
+> [!NOTE]
+> `SUPER` key refers to the Windows/Command key
+
+### 🖥️ Hyprland Shortcuts -> ~/dotfiles/hypr/
 
 ### Custom Apps
 
@@ -161,8 +193,7 @@ Hyprland Shortcuts -> ~/dotfiles/hypr/
 | `SUPER + SHIFT + ALT + O` | Start active window recording using wf-recorder |
 | `SUPER + CTRL + O` | Stop screen recording using wf-recorder |
 
-Kitty Shortcuts -> ~/dotfiles/kitty/kitty_shortcuts.conf
-----
+### 🐱 Kitty Shortcuts -> ~/dotfiles/kitty/kitty_shortcuts.conf
 
 ### Copy and paste buffers
 
