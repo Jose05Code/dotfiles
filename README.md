@@ -195,7 +195,7 @@ Kitty Shortcuts -> ~/dotfiles/kitty/kitty_shortcuts.conf
 | `CTRL + ALT + SHIFT + TAB` | Close current window |
 | `CTRL + SHIFT + F1` | detach window |
 | `CTRL + SHIFT + F2` | detach and ask window |
-| `CTRL + SHIFT + UP` | Rezise window up |
-| `CTRL + SHIFT + DOWN` | Rezise window down |
+| `CTRL + SHIFT + UP` | Resize window up |
+| `CTRL + SHIFT + DOWN` | Resize window down |
 
 
