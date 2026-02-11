@@ -185,7 +185,7 @@ Kitty Shortcuts -> ~/dotfiles/kitty/kitty_shortcuts.conf
 | `CTRL + SHIFT + W` | Close current tab |
 | `CTRL + SHIFT + 1` | Detach current tab |
 | `CTRL + SHIFT + 2` | Detach and ask current tab |
-| `CTRL + SHIFT + Q` | Change title of current tab |
+| `CTRL + SHIFT + ALT + Q` | Change title of current tab |
 
 ### Window management
 
