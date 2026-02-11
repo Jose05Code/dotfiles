@@ -56,7 +56,7 @@ Dependencies
 * **firefox** — Web browser
 * **brave** — Web browser
 
-Instalation
+Installation
 ====
 
 Clone the repository
