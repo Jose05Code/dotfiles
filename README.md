@@ -209,7 +209,7 @@ Hyprland Shortcuts -> ~/dotfiles/hypr/
 Kitty Shortcuts -> ~/dotfiles/kitty/kitty_shortcuts.conf
 ----
 
-### Copy and past buffers
+### Copy and paste buffers
 
 | Action | Shortcut |
 |---|---|
