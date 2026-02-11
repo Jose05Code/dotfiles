@@ -151,7 +151,7 @@ ln -sf ~/dotfiles/kitty/kitty.conf ~/.config/kitty/kitty.conf
 ln -sf ~/dotfiles/zsh/.oh-my-zsh ~/.config/.oh-my-zsh
 ln -sf ~/dotfiles/nvim ~/.config/nvim
 ln -sf ~/dotfiles/waybar ~/.config/waybar
-ln -sf ~/dotfiles/hyprl ~/.conf/hyprl
+ln -sf ~/dotfiles/hypr ~/.config/hypr
 ```
 
 Change default shell to zsh 
