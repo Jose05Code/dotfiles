@@ -1,6 +1,6 @@
 #! /usr/bin/bash
 
-file_nvim="$HOME/dotfiles/nvim/lua/Aicama/theme.lua"
+file_nvim="$HOME/dotfiles/nvim/lua/theme.lua"
 file_kitty="$HOME/dotfiles/kitty/kitty.conf"
 
 if grep -q 'vim.opt.background = "light"' $file_nvim; then
