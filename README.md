@@ -61,6 +61,7 @@
 * **fzf** — Fuzzy finder
 * **zoxide** — Smarter `cd` command
 * **kitty** — Terminal emulator
+* **jq** — Command-line JSON processor
 
 ### Wayland / Hyprland utilities
 
