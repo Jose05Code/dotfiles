@@ -14,3 +14,11 @@ vim.keymap.set("n", "<leader>t", "<cmd>ToggleTerm<cr>", {noremap = true, silent 
 vim.keymap.set("v", "<Tab>", ">gv", {noremap = true, silent = true})
 vim.keymap.set("v", "<S-Tab>", "<gv", {noremap = true, silent = true})
 
+-- json format
+vim.keymap.set("n", "<leader>jq", function()
+    vim.cmd("%!jq .")
+end, { desc = "Format JSON with jq" })
+
+vim.keymap.set("n", "<leader>jqf", function()
+    vim.cmd("%!jq -c .")
+end, { desc = "Minify with jq" })
