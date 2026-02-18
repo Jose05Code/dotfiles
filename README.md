@@ -230,4 +230,13 @@ chsh -s $(which zsh)
 | `CTRL + SHIFT + UP` | Resize window up |
 | `CTRL + SHIFT + DOWN` | Resize window down |
 
+### Neovim Shortcuts -> ~/dotfiles/nvim/lua/keymaps.lua
 
+| Action | Shortcut |
+|---|---|
+| `SPACE + J + Q` | Format json using jq |
+| `SPACE + J + Q + F` | Minify json using jq |
+| `SPACE + T` | Open console using nvim |
+| `SPACE + E` | Open file explorer using nvim-tree |
+| `TAB` | Ident current line |
+| `SHIFT + TAB` | Unindent current line |
